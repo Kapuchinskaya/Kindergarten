@@ -1,2 +1,0 @@
-# Kindergarten
-Kindergarten Website
