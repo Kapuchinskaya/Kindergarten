@@ -45,6 +45,7 @@ const Carousel = () => {
   };
 
   const settings = {
+    arrows: false,
     dots: false,
     infinite: true,
     autoplay: true,
