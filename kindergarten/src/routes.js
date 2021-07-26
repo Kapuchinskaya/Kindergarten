@@ -1,10 +1,17 @@
 import { Switch, Route, BrowserRouter } from "react-router-dom";
-import Layout from "./Components/Header_footer/Layout";
+import Header from "./Components/Header_footer/Header";
+import Footer from "./Components/Header_footer/Footer";
+import Home from "./Components/Home/index";
+import Articles from "./Components/News";
 
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Layout />
+      <Header />
+      <Home />
+      <Articles />
+
+      <Footer />
     </BrowserRouter>
   );
 };
