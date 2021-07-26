@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Toolbar, Button, makeStyles } from "@material-ui/core";
+import { AppBar, Toolbar, makeStyles } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import logo from "../../Resources/flowers.png";
 
