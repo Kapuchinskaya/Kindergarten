@@ -33,11 +33,13 @@ footer {
   height: 240px;
   padding: 50px 30px 20px 30px;
   background-color: #60605b;
+  
 }
 
 .footer-section {
   display: flex;
   flex-direction: column;
+  
 }
 
 .footer-section-head {
@@ -50,6 +52,7 @@ footer {
 }
 
 .footer-section-description {
+  
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -58,4 +61,44 @@ footer {
   line-height: 1.5em;
   color: #d0d0cf;
   text-align: center;
+}
+
+/*====================
+        CAROUSEL
+======================*/
+.carousel-wrapper {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.carousel-image {
+  background-size: cover !important;
+}
+
+.slide-description {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 400px;
+  height: 160px;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  background-color: rgba(1, 1, 1, 0.64);
+}
+
+.slide-description-header {
+  margin: 6px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding: 21px 70px 0px 70px;
+  text-transform: uppercase;
+}
+
+.slide-description-content {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
 }
