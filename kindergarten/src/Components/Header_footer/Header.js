@@ -7,7 +7,6 @@ const useStyles = makeStyles(() => ({
   appBar: {
     display: "flex",
     backgroundColor: "#fafafa",
-    width: "100%",
     height: "120px",
     justifyContent: "space-between",
     alignItems: "center",
@@ -23,6 +22,7 @@ const useStyles = makeStyles(() => ({
     padding: "0px",
   },
   appbarLink: {
+    color: "#336666",
     fontWeight: "500",
     textDecoration: "none",
     textTransform: "uppercase",

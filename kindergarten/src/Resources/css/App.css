@@ -22,5 +22,40 @@ body {
   font-family: "Roboto", sans-serif;
 }
 /*=============================
-          HEADER FOOTER
+          FOOTER
 ===============================*/
+
+footer {
+  bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 240px;
+  padding: 50px 30px 20px 30px;
+  background-color: #60605b;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section-head {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.footer-section-description {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #d0d0cf;
+  text-align: center;
+}
