@@ -1,7 +1,7 @@
 import React from "react";
 import SmallArticle from "./Small_article.js";
 
-import news from "../../Resources/newsData";
+import news from "../../Resources/data/newsData";
 
 const Articles = () => {
   return news.map((item, index) => (

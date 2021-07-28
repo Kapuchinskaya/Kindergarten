@@ -1,7 +1,7 @@
 import React from "react";
 
 import ArticleOverviewElement from "./Articles_overview_element";
-import news from "./../../../Resources/newsData";
+import news from "../../../Resources/data/newsData";
 import ReusableButton from "../../Utils/ReusableButton";
 
 const ArticleOverview = () => {

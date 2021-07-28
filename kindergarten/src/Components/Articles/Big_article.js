@@ -2,7 +2,7 @@ import React from "react";
 import ScheduleIcon from "@material-ui/icons/Schedule";
 import ReusableButton from "../Utils/ReusableButton";
 // import { useHistory, useParams } from 'react-router-dom'
-import news from "../../Resources/newsData";
+import news from "../../Resources/data/newsData";
 
 const BigArticle = (props) => {
   const article = news.find(
