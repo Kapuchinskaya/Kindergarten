@@ -4,9 +4,11 @@ import "./Resources/css/App.css";
 import Routes from "./routes";
 import "./Resources/css/App.css";
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Routes />
+
   </React.StrictMode>,
   document.getElementById("root")
 );

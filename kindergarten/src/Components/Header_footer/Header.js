@@ -45,7 +45,9 @@ const Header = () => {
   return (
     <AppBar class={classes.appBar} position="fixed">
       <div className={classes.headerLogo}>
-        <img linkTo={"/"} src={logo} alt="logo" />
+        <Link to={"/"}>
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
 
       <Toolbar className={classes.toolbar}>

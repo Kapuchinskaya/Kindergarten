@@ -21,6 +21,19 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+
+/*=============================
+          HEADINGS
+===============================*/
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #e67e22;
+  margin: 20px;
+  text-align: center;
+}
 /*=============================
           FOOTER
 ===============================*/
@@ -100,20 +113,22 @@ footer {
 }
 
 /*====================
-        ARTICLE
+        ARTICLES
 ======================*/
 
 .article-wrapper {
   display: flex;
   max-width: 1020px;
   margin: 40px auto 0px auto;
+  padding-bottom: 40px;
   align-items: flex-start;
   justify-content: left;
+  border-bottom: 2px solid #336666;
 }
 
 .article-column {
   margin: 0px 30px;
-  width: 540px
+  width: 540px;
 }
 
 .article-title {
@@ -140,12 +155,36 @@ footer {
   margin-bottom: 10px;
 }
 
-/* .more-btn {
-  background: #0d1831;
-  color: #ffffff;
-  border: 1px solid #0d1831;
-  padding: 5px 10px;
-  margin-top: 10px;
-  font-size: 15px;
-  border-radius: 3px;
-} */
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.article-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.all-news-btn {
+  margin-bottom: 20px;
+}
+
+/*====================
+        BIG ARTICLE
+======================*/
+.big-article-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+.big-article-wrapper img {
+  max-height: 400px;
+  border-radius: 5%;
+}
+.big-article-body {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px;
+}
