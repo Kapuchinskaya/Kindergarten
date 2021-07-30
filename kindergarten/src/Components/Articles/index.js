@@ -5,7 +5,7 @@ const News = () => {
   return (
     <div className="news">
       <h2>Aktualnosci</h2>
-      <Articles></Articles>
+      <Articles />
     </div>
   );
 };

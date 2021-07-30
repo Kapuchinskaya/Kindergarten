@@ -1,8 +1,6 @@
 import React from "react";
 import ScheduleIcon from "@material-ui/icons/Schedule";
 import ReusableButton from "../Utils/ReusableButton";
-import { Route } from "react-router-dom";
-import BigArticle from "./Big_article";
 
 const SmallArticle = (props) => {
   return (
@@ -23,7 +21,7 @@ const SmallArticle = (props) => {
 
           {/* <Route path={"/" + props.title} component={BigArticle} ></Route> */}
 
-          <ReusableButton text="MORE" path={"/actualnosci/" + props.id} />
+          <ReusableButton text="MORE" path={"/actualnosci/" + props.id} arrow="right"/>
         </div>
       </div>
     </div>

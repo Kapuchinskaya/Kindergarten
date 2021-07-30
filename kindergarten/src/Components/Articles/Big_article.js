@@ -8,7 +8,6 @@ const BigArticle = (props) => {
   const article = news.find(
     (newsItem) => newsItem.id === props.match.params.id
   );
-  console.log(article, props.match.params.id);
   if (!article) return null;
 
   return (
@@ -22,7 +21,7 @@ const BigArticle = (props) => {
         </div>
         <div className="article-content">{article.content} </div>
       </div>
-      <ReusableButton text="BACK" path="/actualnosci"></ReusableButton>
+      <ReusableButton text="BACK" path="/actualnosci" arrow="left"></ReusableButton>
     </div>
   );
 };

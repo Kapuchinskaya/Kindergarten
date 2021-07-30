@@ -20,7 +20,7 @@ const ArticleOverview = () => {
     <div className="article-overview">
       <div className="cards-wrapper">{getArticleElements()}</div>
       <div className="all-news-btn">
-        <ReusableButton text="ALL NEWS" path="/actualnosci"></ReusableButton>
+        <ReusableButton text="ALL NEWS" path="/actualnosci" arrow="right"></ReusableButton>
       </div>
     </div>
   );
