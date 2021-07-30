@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar, Toolbar, makeStyles } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import logo from "../../Resources/flowers.png";
+import logo from "../../Resources/images/icon.png";
 
 const useStyles = makeStyles(() => ({
   appBar: {
@@ -23,16 +23,12 @@ const useStyles = makeStyles(() => ({
   },
   appbarLink: {
     color: "#336666",
+    fontSize: "20px",
     fontWeight: "500",
     textDecoration: "none",
     textTransform: "uppercase",
     margin: "0px 10px",
     "&:hover": {
-      borderBottom: "2px solid #e67e22",
-      color: "#e67e22",
-    },
-    "&:active": {
-      //TODO краткая запись
       borderBottom: "2px solid #e67e22",
       color: "#e67e22",
     },

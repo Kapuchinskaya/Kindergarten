@@ -20,8 +20,8 @@ const footerContent = [
 
 const Footer = () => {
   const footerSections = () => {
-    return footerContent.map((section) => (
-      <div className="footer-section" key={section.name}>
+    return footerContent.map((section, index) => (
+      <div className="footer-section" key={index}>
         <div className="footer-section-head">{section.name}</div>
         <div className="footer-section-description">
           {section.descriptionOne}
