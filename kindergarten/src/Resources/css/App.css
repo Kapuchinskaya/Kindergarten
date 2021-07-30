@@ -34,6 +34,37 @@ h2 {
   margin: 20px;
   text-align: center;
 }
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #e67e22;
+  margin: 0px;
+  text-align: center;
+}
+
+/*=============================
+            UNDER CONSTRUCTION
+===============================*/
+.under-the-construction {
+  text-align: center;
+  /* margin-top: 50px; */
+  background-size: 5px 5px !important;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 60px;
+  color: #d5ebfe;
+}
+
+.under-the-construction img {
+  margin-top: 30px;
+  background: transparent;
+}
+
+.under-the-construction p {
+  margin: 20px 100px;
+}
 /*=============================
           FOOTER
 ===============================*/
@@ -187,4 +218,94 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 20px 50px;
+}
+
+/*====================
+        FOR PARENTS
+======================*/
+
+.for-parents-slide:hover .for-parents-slide-text-wrapper {
+  background-color: #e67e22;
+}
+.for-parents-slide:hover .for-parents-slide-img {
+  opacity: 1;
+  transform: scale(1.03);
+}
+.for-parents-section-wrapper {
+  padding: 30px 0px;
+  background-color: #d0d0cf;
+}
+.for-parents-slide-text-wrapper {
+  margin: 100px 25px;
+  width: 350px;
+  height: 100px;
+  border: white solid;
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(1, 1, 1, 0.3);
+}
+
+.for-parents-slide-text {
+  text-align: center;
+  padding-top: 25px;
+  margin: 0px;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.for-parents-slide-img {
+  height: 300px;
+  width: 400px;
+  margin: 0px;
+  opacity: 0.7;
+}
+
+/*====================
+        RESPONSES
+======================*/
+
+.responses {
+  width: 40%;
+  margin: 50px auto;
+}
+.quote {
+  position: absolute;
+  color: #336666;
+  font: italic 500px Roboto;
+  margin: -100px 0px 0px -100px;
+  opacity: 20%;
+}
+
+.response-item-content {
+  font: italic 15px Roboto;
+  margin: 20px 40px;
+}
+.response-item-owner {
+  font: bold 20px Roboto;
+  color: #336666;
+  margin: 0px 20px;
+  text-align: center;
+}
+
+/*====================
+        GALLERY
+======================*/
+.gallery-wrapper {
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/gallery-bck.jpg");
+  background-repeat: repeat;
+}
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.gallery-item img {
+  height: 800px;
+  margin: 20px auto;
 }
