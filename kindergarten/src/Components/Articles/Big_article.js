@@ -5,6 +5,7 @@ import ReusableButton from "../Utils/ReusableButton";
 import news from "../../Resources/data/newsData";
 
 const BigArticle = (props) => {
+  console.log(props, props.match.params.id)
   const article = news.find(
     (newsItem) => newsItem.id === props.match.params.id
   );

@@ -17,11 +17,15 @@ const SmallArticle = (props) => {
             <ScheduleIcon />
             <div className="article-time">{props.time}</div>
           </div>
-          <div className="article-content">{props.content} </div>
+          <div className="article-content">{props.content?.slice(0, 100)}... </div>
 
           {/* <Route path={"/" + props.title} component={BigArticle} ></Route> */}
 
-          <ReusableButton text="MORE" path={"/actualnosci/" + props.id} arrow="right"/>
+          <ReusableButton
+            text="MORE"
+            path={"/actualnosci/" + props.id}
+            arrow="right"
+          />
         </div>
       </div>
     </div>
