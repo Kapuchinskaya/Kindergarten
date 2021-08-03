@@ -19,6 +19,7 @@
     "react-responsive-carousel": "^3.2.20",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-toastify": "^7.0.4",
     "react-scroll": "^1.8.3",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
