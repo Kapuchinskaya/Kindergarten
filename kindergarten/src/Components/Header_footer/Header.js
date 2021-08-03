@@ -56,8 +56,8 @@ const Header = () => {
         <Link className={classes.appbarLink} to="/galeria">
           Galeria
         </Link>
-        <Link className={classes.appbarLink} to="/kontakt">
-          Kontakt
+        <Link className={classes.appbarLink} to="/kontakty">
+          Kontakty
         </Link>
       </Toolbar>
     </AppBar>
