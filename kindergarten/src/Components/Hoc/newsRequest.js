@@ -3,9 +3,8 @@ import { newsCollection } from "../../firebase";
 import { showErrorToast } from "./../Utils/Toasts";
 import { CircularProgress } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import ScheduleIcon from "@material-ui/icons/Schedule";
-import ReusableButton from "../Utils/ReusableButton";
-import UnderConstruction from "../Utils/UnderConstruction";
+import NewsPage from "./../Articles/index";
+import ArticleOverview from "./../Home/ArticlesOverview/index";
 
 const useStyles = makeStyles(() => ({
   circProgress: {
@@ -15,7 +14,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const BigArticle = (props) => {
+const NewsHoc = (props) => {
   const classes = useStyles();
   const [loading, setLoading] = useState(true);
   const [news, setNews] = useState([]);
@@ -40,37 +39,23 @@ const BigArticle = (props) => {
     (newsItem) => newsItem.id === props.match?.params.id
   );
 
-  if (!article)
-    return (
-      <UnderConstruction
-        message="The article isnot found"
-        path="/actualnosci"
-      />
-    );
+  const Component = components[props.match?.params.type ?? props.type];
+
+  if (!Component) return null;
   return (
     <>
       {loading ? (
         <CircularProgress className={classes.circProgress} />
       ) : (
-        <div className="big-article-wrapper">
-          <img src={article.image} alt={article.title}></img>
-          <div className="big-article-body">
-            <div className="article-title">{article.title} </div>
-            <div className="article-time-wrapper">
-              <ScheduleIcon />
-              <div className="article-time">{article.time}</div>
-            </div>
-            <div className="article-content">{article.content} </div>
-          </div>
-          <ReusableButton
-            text="BACK"
-            path="/actualnosci/newsPage"
-            arrow="left"
-          ></ReusableButton>
-        </div>
+        <Component news={news} article={article} />
       )}
     </>
   );
 };
 
-export default BigArticle;
+export default NewsHoc;
+
+const components = {
+  newsPage: NewsPage,
+  articleOverview: ArticleOverview,
+};

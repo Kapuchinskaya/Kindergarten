@@ -1,13 +1,26 @@
 import React from "react";
-import Articles from "./Article_list";
+import SmallArticle from "./Small_article";
 
-const News = () => {
+const NewsPage = (props) => {
+  const generateSmallArticles = props.news.map((item, index) => {
+    return (
+      <SmallArticle
+        key={index}
+        title={item.title}
+        content={item.content}
+        time={item.time}
+        image={item.image}
+        id={item.id}
+      ></SmallArticle>
+    );
+  });
+
   return (
     <div className="news">
       <h2>Aktualnosci</h2>
-      <Articles />
+      {generateSmallArticles}
     </div>
   );
 };
 
-export default News;
+export default NewsPage;

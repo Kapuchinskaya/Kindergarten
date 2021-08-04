@@ -29,6 +29,8 @@ const useStyles = makeStyles({
 
 const ArticleOverviewElement = (props) => {
   const classes = useStyles();
+  console.log(props);
+  console.log(props.id);
 
   return (
     <Card className={classes.root}>
@@ -45,10 +47,14 @@ const ArticleOverviewElement = (props) => {
               <ScheduleIcon />
               <div className="article-time">{props.time}</div>
             </div>
-            <p className="article-content">{props.content.slice(0, 100)}...</p>
+            <p className="article-content">{props?.content.slice(0, 100)}...</p>
           </CardContent>
           <CardActions className={classes.buttonWrapper}>
-            <ReusableButton text="MORE" path={"/actualnosci"} arrow="right" />
+            <ReusableButton
+              text="MORE"
+              path={"/actualnosci/bigArticle/" + props.id}
+              arrow="right"
+            />
           </CardActions>
         </div>
       </div>

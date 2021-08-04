@@ -13,10 +13,6 @@ const useStyles = makeStyles(() => ({
     padding: "0 2%",
     // boxShadow: "none",
   },
-  headerLogo: {
-    width: "70px",
-    height: "70px",
-  },
   toolbar: {
     justifyContent: "flex - end",
     padding: "0px",
@@ -40,14 +36,12 @@ const Header = () => {
 
   return (
     <AppBar class={classes.appBar} position="fixed">
-      <div className={classes.headerLogo}>
-        <Link to={"/"}>
-          <img src={logo} alt="logo" />
-        </Link>
-      </div>
+      <Link to={"/"}>
+        <img src={logo} alt="logo" className="headerLogo" />
+      </Link>
 
       <Toolbar className={classes.toolbar}>
-        <Link className={classes.appbarLink} to="/actualnosci">
+        <Link className={classes.appbarLink} to="/actualnosci/newsPage">
           Actualnosci
         </Link>
         <Link className={classes.appbarLink} to="/dla_rodzicow">

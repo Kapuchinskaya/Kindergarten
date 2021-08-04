@@ -1,26 +1,32 @@
 import React from "react";
-
 import ArticleOverviewElement from "./Articles_overview_element";
-import news from "../../../Resources/data/newsData";
 import ReusableButton from "../../Utils/ReusableButton";
 
-const ArticleOverview = () => {
+const ArticleOverview = (props) => {
   const getArticleElements = () => {
-    return news.map((item, index) => (
-      <ArticleOverviewElement
-        key={index}
-        title={item.title}
-        content={item.content}
-        time={item.time}
-        image={item.image}
-      ></ArticleOverviewElement>
-    ));
+    return props.news
+      .slice(0, 3)
+      .map((item, index) => (
+        <ArticleOverviewElement
+          key={index}
+          title={item.title}
+          content={item.content}
+          time={item.time}
+          image={item.image}
+          id={item.id}
+        ></ArticleOverviewElement>
+      ));
   };
+
   return (
     <div className="article-overview">
-      <div className="cards-wrapper">{getArticleElements()}</div>
+      <div className="cards-wrapper">{getArticleElements(props)}</div>
       <div className="all-news-btn">
-        <ReusableButton text="ALL NEWS" path="/actualnosci" arrow="right"></ReusableButton>
+        <ReusableButton
+          text="ALL NEWS"
+          path="/actualnosci/newsPage"
+          arrow="right"
+        ></ReusableButton>
       </div>
     </div>
   );

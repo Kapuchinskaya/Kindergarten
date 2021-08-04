@@ -7,11 +7,11 @@ const UnderConstruction = (props) => {
     <div className="under-the-construction">
       <img src={image} alt="under construction"></img>
       <p>Sorry :(</p>
-      <p>The section is under construction</p>
+      <p>{props.message}</p>
 
       <ReusableButton
         text="BACK"
-        path={props.path}
+        path={props.path??"/"}
         arrow="left"
       ></ReusableButton>
     </div>
@@ -19,3 +19,4 @@ const UnderConstruction = (props) => {
 };
 
 export default UnderConstruction;
+
