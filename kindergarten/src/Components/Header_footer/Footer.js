@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../../Resources/images/icon-white.png";
 
 const footerContent = [
   {
@@ -32,7 +34,14 @@ const Footer = () => {
       </div>
     ));
   };
-  return <footer>{footerSections()}</footer>;
+  return (
+    <footer>
+      <Link to={"/"}>
+        <img src={logo} alt="logo" className="headerLogo" />
+      </Link>
+      <div className="footer-columns"> {footerSections()}</div>
+    </footer>
+  );
 };
 
 export default Footer;

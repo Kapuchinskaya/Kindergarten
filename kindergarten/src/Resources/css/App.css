@@ -87,14 +87,17 @@ h3 {
 footer {
   bottom: 0;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  height: 240px;
-  padding: 50px 30px 20px 30px;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
   background-color: #60605b;
   flex: 0 0 auto;
 }
-
+.footer-columns {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -351,7 +354,7 @@ footer {
 
 .contacts-column p {
   color: #60605b;
-  margin: 0px 0px 5px 0px;
+  margin-top: 5px;
 }
 
 .map-responsive {
