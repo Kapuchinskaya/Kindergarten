@@ -10,7 +10,7 @@ const useStyles = makeStyles(() => ({
     textDecoration: "none",
   },
   btn: {
-    margin: "20px 0px",
+    margin: "10px 0px",
     padding: "10px",
     backgroundColor: "#336666",
     color: "#fff",
@@ -27,9 +27,17 @@ const ReusableButton = (props) => {
   return (
     <Link to={props.path} className={classes.linkTo}>
       <Button className={classes.btn}>
-        {props.arrow === "left" ? <ChevronLeftIcon /> : null}
+        {props.arrow === "left" ? (
+          <ChevronLeftIcon />
+        ) : (
+          <div style={{ width: "10px" }} />
+        )}
         {props.text}
-        {props.arrow === "right" ? <ChevronRightIcon /> : null}
+        {props.arrow === "right" ? (
+          <ChevronRightIcon fontSize="medium" />
+        ) : (
+          <div style={{ width: "10px" }} />
+        )}
       </Button>
     </Link>
   );
