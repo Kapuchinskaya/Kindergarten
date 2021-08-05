@@ -1,5 +1,6 @@
 import React from "react";
 import SmallArticle from "./Small_article";
+import ToHomeButtonLayout from "./../Hoc/ToHomeButtonLayout";
 
 const NewsPage = (props) => {
   const generateSmallArticles = props.news.map((item, index) => {
@@ -16,10 +17,10 @@ const NewsPage = (props) => {
   });
 
   return (
-    <div className="news">
+    <ToHomeButtonLayout>
       <h2>Aktualnosci</h2>
       {generateSmallArticles}
-    </div>
+    </ToHomeButtonLayout>
   );
 };
 

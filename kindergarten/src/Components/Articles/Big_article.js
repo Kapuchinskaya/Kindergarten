@@ -66,7 +66,7 @@ const BigArticle = (props) => {
             text="BACK"
             path="/actualnosci/newsPage"
             arrow="left"
-          ></ReusableButton>
+          />
         </div>
       )}
     </>

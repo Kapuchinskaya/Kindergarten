@@ -29,6 +29,13 @@ body {
   flex: 1 0 auto;
 }
 
+.component-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*=============================
           HEADINGS
 ===============================*/
@@ -202,7 +209,6 @@ footer {
 
 .article-content {
   color: #60605b;
-  margin-bottom: 40px;
 }
 
 .cards-wrapper {
@@ -227,7 +233,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px;
+  margin-top: 20px;
 }
 .big-article-wrapper img {
   max-height: 400px;

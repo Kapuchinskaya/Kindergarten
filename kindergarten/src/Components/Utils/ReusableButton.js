@@ -10,6 +10,7 @@ const useStyles = makeStyles(() => ({
     textDecoration: "none",
   },
   btn: {
+    margin: "20px 0px",
     padding: "10px",
     backgroundColor: "#336666",
     color: "#fff",

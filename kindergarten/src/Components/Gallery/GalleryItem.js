@@ -8,7 +8,6 @@ const GalleryItem = (props) => {
     (photocard) => photocard.id === +props.match.params.id
   );
   if (!photo) return null;
-  console.log(photo);
   return (
     <div className="gallery-item">
       <h3>{photo.title}</h3>

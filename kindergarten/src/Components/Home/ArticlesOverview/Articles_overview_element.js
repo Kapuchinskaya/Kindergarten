@@ -29,8 +29,6 @@ const useStyles = makeStyles({
 
 const ArticleOverviewElement = (props) => {
   const classes = useStyles();
-  console.log(props);
-  console.log(props.id);
 
   return (
     <Card className={classes.root}>

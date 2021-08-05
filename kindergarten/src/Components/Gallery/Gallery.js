@@ -1,10 +1,11 @@
 import React from "react";
 import ReusableButton from "../Utils/ReusableButton";
 import Photos from "./Photos";
+import ToHomeButtonLayout from "./../Hoc/ToHomeButtonLayout";
 
 const Gallery = (props) => {
   return (
-    <div className="gallery-wrapper">
+    <ToHomeButtonLayout>
       <h2>Galeria</h2>
       <Photos limit={props.limit} />
       {props.btn ? (
@@ -12,7 +13,7 @@ const Gallery = (props) => {
           <ReusableButton arrow="right" path={"/galeria"} text="all photos" />
         </div>
       ) : null}
-    </div>
+    </ToHomeButtonLayout>
   );
 };
 
