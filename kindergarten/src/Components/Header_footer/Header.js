@@ -42,16 +42,16 @@ const Header = () => {
 
       <Toolbar className={classes.toolbar}>
         <Link className={classes.appbarLink} to="/actualnosci/newsPage">
-          Actualnosci
+          aktualności
         </Link>
         <Link className={classes.appbarLink} to="/dla_rodzicow">
-          Dla rodzicow
+          dla rodziców
         </Link>
         <Link className={classes.appbarLink} to="/galeria">
-          Galeria
+          galeria
         </Link>
         <Link className={classes.appbarLink} to="/kontakty">
-          Kontakty
+          kontakty
         </Link>
       </Toolbar>
     </AppBar>

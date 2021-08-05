@@ -23,7 +23,7 @@ const ArticleOverview = (props) => {
       <div className="cards-wrapper">{getArticleElements(props)}</div>
       <div className="all-news-btn">
         <ReusableButton
-          text="ALL NEWS"
+          text="Wszystkie aktualności"
           path="/actualnosci/newsPage"
           arrow="right"
         ></ReusableButton>

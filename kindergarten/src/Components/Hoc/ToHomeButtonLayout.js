@@ -5,7 +5,9 @@ const ToHomeButtonLayout = (props) => {
   return (
     <div className="component-container">
       {props.children}
-      <ReusableButton text="WSTECZ" path="/" arrow="left" />
+      {!props.deleteBackBtn ? (
+        <ReusableButton text="WSTECZ" path="/" arrow="left" />
+      ) : null}
     </div>
   );
 };
