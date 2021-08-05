@@ -5,14 +5,20 @@ import ToHomeButtonLayout from "./../Hoc/ToHomeButtonLayout";
 
 const Gallery = (props) => {
   return (
-    <ToHomeButtonLayout>
-      <h2>Galeria</h2>
-      <Photos limit={props.limit} />
-      {props.btn ? (
-        <div style={{ marginTop: "20px" }}>
-          <ReusableButton arrow="right" path={"/galeria"} text="all photos" />
-        </div>
-      ) : null}
+    <ToHomeButtonLayout deleteBackBtn={props.deleteBackBtn}>
+      <div className="gallery-wrapper">
+        <h2>Galeria</h2>
+        <Photos limit={props.limit} />
+        {props.btn ? (
+          <div style={{ marginTop: "20px" }}>
+            <ReusableButton
+              arrow="right"
+              path={"/galeria"}
+              text="wszystkie zdjęcia"
+            />
+          </div>
+        ) : null}
+      </div>
     </ToHomeButtonLayout>
   );
 };
