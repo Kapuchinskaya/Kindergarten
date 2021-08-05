@@ -49,7 +49,7 @@ const ArticleOverviewElement = (props) => {
           </CardContent>
           <CardActions className={classes.buttonWrapper}>
             <ReusableButton
-              text="MORE"
+              text="WIĘCEJ"
               path={"/actualnosci/bigArticle/" + props.id}
               arrow="right"
             />

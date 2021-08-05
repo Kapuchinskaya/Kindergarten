@@ -10,8 +10,8 @@ const UnderConstruction = (props) => {
       <p>{props.message}</p>
 
       <ReusableButton
-        text="BACK"
-        path={props.path??"/"}
+        text="WSTECZ"
+        path={props.path ?? "/"}
         arrow="left"
       ></ReusableButton>
     </div>
@@ -19,4 +19,3 @@ const UnderConstruction = (props) => {
 };
 
 export default UnderConstruction;
-

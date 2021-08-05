@@ -21,7 +21,7 @@ const SmallArticle = (props) => {
             {props.content?.slice(0, 100)}...
           </div>
           <ReusableButton
-            text="MORE"
+            text="WIĘCEJ"
             path={"/actualnosci/bigArticle/" + props.id}
             arrow="right"
           />

@@ -12,7 +12,11 @@ const GalleryItem = (props) => {
     <div className="gallery-item">
       <h3>{photo.title}</h3>
       <img src={photo.img} alt={photo.title}></img>
-      <ReusableButton text="BACK" path="/galeria" arrow="left"></ReusableButton>
+      <ReusableButton
+        text="WSTECZ"
+        path="/galeria"
+        arrow="left"
+      ></ReusableButton>
     </div>
   );
 };

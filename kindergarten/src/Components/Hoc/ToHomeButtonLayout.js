@@ -5,7 +5,7 @@ const ToHomeButtonLayout = (props) => {
   return (
     <div className="component-container">
       {props.children}
-      <ReusableButton text="BACK" path="/" arrow="left" />
+      <ReusableButton text="WSTECZ" path="/" arrow="left" />
     </div>
   );
 };

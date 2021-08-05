@@ -176,8 +176,7 @@ footer {
 .article-wrapper {
   display: flex;
   max-width: 1020px;
-  margin: 40px auto 0px auto;
-  padding-bottom: 40px;
+  padding: 20px 0px 10px 0px ;
   align-items: flex-start;
   justify-content: left;
   border-bottom: 2px solid #336666;
