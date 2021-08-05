@@ -10,7 +10,7 @@ import ReusableButton from "../../Utils/ReusableButton";
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
-    margin: "20px",
+    margin: "10px",
   },
   rootWrapper: { position: "relative", height: "100%" },
   media: {
@@ -18,8 +18,10 @@ const useStyles = makeStyles({
   },
   content: {
     flex: "1 0 auto",
+    paddingBottom: "40px",
   },
   buttonWrapper: {
+    padding: "0px",
     position: "absolute",
     bottom: "0px",
     left: "50%",
