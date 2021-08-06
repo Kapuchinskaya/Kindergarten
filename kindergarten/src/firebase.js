@@ -21,10 +21,13 @@ firebase.initializeApp(firebaseConfig);
 
 const DB = firebase.firestore();
 const newsCollection = DB.collection("news");
-const usersCollection = DB.collection("users");
+const forParentsCollection = DB.collection("forParents");
 
 // kindergartenDB.news.forEach((item) => {
 //   newsCollection.add(item);
 // });
+// kindergartenDB.forParents.forEach((item) => {
+//   forParentsCollection.add(item);
+// });
 
-export { firebase, usersCollection, newsCollection };
+export { firebase, newsCollection, forParentsCollection };
