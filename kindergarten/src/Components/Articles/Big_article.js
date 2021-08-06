@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import ScheduleIcon from "@material-ui/icons/Schedule";
 import ReusableButton from "../Utils/ReusableButton";
 import UnderConstruction from "../Utils/UnderConstruction";
+import UpButton from "../Utils/upButton";
 
 const useStyles = makeStyles(() => ({
   circProgress: {
@@ -67,6 +68,7 @@ const BigArticle = (props) => {
             path="/actualnosci/newsPage"
             arrow="left"
           />
+          <UpButton />
         </div>
       )}
     </>

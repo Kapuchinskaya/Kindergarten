@@ -3,21 +3,20 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import forParents from "./../../../Resources/data/forParentsData";
 
-const ForParentsItem = () => {
-  const createSlides = () => {
-    return forParents.map((slide, index) => (
-      <Link to="/dla_rodzicow" className="for-parents-slide" key={index}>
-        <div className="for-parents-slide-wrapper">
-          <div className="for-parents-slide-text-wrapper">
-            <p className="for-parents-slide-text">{slide.title}</p>
-          </div>
-
-          <img src={slide.image} className="for-parents-slide-img" />
+const createSlides = () => {
+  return forParents.map((slide, index) => (
+    <Link to="/dla_rodzicow" className="for-parents-slide" key={index}>
+      <div className="for-parents-slide-wrapper">
+        <div className="for-parents-slide-text-wrapper">
+          <p className="for-parents-slide-text">{slide.title}</p>
         </div>
-      </Link>
-    ));
-  };
 
+        <img src={slide.image} className="for-parents-slide-img" />
+      </div>
+    </Link>
+  ));
+};
+const ForParentsItem = () => {
   const settings = {
     dots: true,
     infinite: true,

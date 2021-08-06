@@ -9,12 +9,14 @@ import ForParentsSection from "./Components/ForParents";
 import Gallery from "./Components/Gallery/Gallery";
 import GalleryItem from "./Components/Gallery/GalleryItem";
 import NewsHoc from "./Components/Hoc/newsRequest";
+import UpButton from "./Components/Utils/upButton";
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <ScrollToTop>
         <Header />
+        <UpButton/>
         <Switch>
           <Route path="/galeria/:id" exact component={GalleryItem} />
           <Route path="/galeria" component={Gallery} />

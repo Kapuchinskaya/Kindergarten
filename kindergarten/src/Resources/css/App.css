@@ -99,6 +99,8 @@ footer {
   padding: 30px;
   background-color: #60605b;
   flex: 0 0 auto;
+  position: relative;
+  z-index: 2;
 }
 .footer-columns {
   display: flex;
@@ -176,7 +178,7 @@ footer {
 .article-wrapper {
   display: flex;
   max-width: 1020px;
-  padding: 20px 0px 10px 0px ;
+  padding: 20px 0px 10px 0px;
   align-items: flex-start;
   justify-content: left;
   border-bottom: 2px solid #336666;
