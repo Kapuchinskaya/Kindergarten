@@ -9,10 +9,9 @@ import pic6 from "../../Resources/images/for_parents/pic6.jpg";
 const forParents = [
   {
     id: "1",
-    title: "Lorem ipsum",
+    title: "Dieta i żywienie",
     content:
       "Nam risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
-    time: "2021/06/01 8:40",
     image: pic1,
   },
   {
@@ -20,7 +19,7 @@ const forParents = [
     title: "NeLorem ipsum",
     content:
       "NeNam risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
-    time: "2021/07/01 11:50",
+
     image: pic2,
   },
   {
@@ -28,7 +27,7 @@ const forParents = [
     title: "ipsum NeLorem",
     content:
       "Risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
-    time: "2021/07/22 15:50",
+
     image: pic3,
   },
   {
@@ -36,7 +35,7 @@ const forParents = [
     title: "Lorem ipsum",
     content:
       "Nam risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
-    time: "2021/06/01 8:40",
+
     image: pic4,
   },
   {
@@ -44,7 +43,7 @@ const forParents = [
     title: "NeLorem ipsum",
     content:
       "NeNam risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
-    time: "2021/07/01 11:50",
+
     image: pic5,
   },
   {
@@ -52,7 +51,7 @@ const forParents = [
     title: "ipsum NeLorem",
     content:
       "Risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
-    time: "2021/07/22 15:50",
+
     image: pic6,
   },
 ];

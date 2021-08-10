@@ -12,69 +12,71 @@ import p10 from "../../Resources/images/gallery/10.jpg";
 import p11 from "../../Resources/images/gallery/11.jpg";
 import p12 from "../../Resources/images/gallery/12.jpg";
 const galleryData = [
-  {
-    img: p1,
-    title: "Lorem ipsum",
-    id: 1,
-  },
+  { img: p1, title: "lorem ipsum", author: "@facilisis", id: 1 },
   {
     img: p2,
-    title: "Lorem ipsum",
-    author: "@bkristastucchio",
+    title: "consectetur adipiscing",
+    author: "@orbiin",
     id: 2,
   },
   {
     img: p3,
-    title: "Lorem ipsum",
+    title: "magna eu justo",
     author: "@bkristastucchio",
     id: 3,
   },
   {
     img: p4,
-    title: "Lorem ipsum",
-    author: "@bkristastucchio",
+    title: "facilisis vitae",
+    author: "@vestibulum",
     id: 4,
   },
   {
     img: p5,
-    title: "Lorem ipsum",
-    author: "@bkristastucchio",
+    title: "blandit arcu",
+    author: "@scelerisque",
     id: 5,
   },
   {
     img: p6,
-    title: "Lorem ipsum",
-    author: "@bkristastucchio",
+    title: "quis placerat leo",
+    author: "@ameteleifend",
     id: 6,
   },
   {
     img: p7,
-    title: "Lorem ipsum",
+    title: "a rhoncus lorem",
+    author: "@scelerisque",
     id: 7,
   },
   {
     img: p8,
-    title: "Lorem ipsum",
+    title: "Suspendisse potenti",
+    author: "@facilisis",
     id: 8,
   },
   {
     img: p9,
-    title: "Lorem ipsum",
+    title: "volutpat urna",
     id: 9,
   },
   {
     img: p10,
-    title: "Lorem ipsum",
+    title: "nteger elementum",
+    author: "@scelerisque",
+
     id: 10,
   },
   {
     img: p11,
     title: "Lorem ipsum",
+    author: "@vestibulum",
     id: 11,
   },
   {
     img: p12,
-    title: "Lorem ipsum",
+    title: "Aliquam leo ipsum",
+    author: "@conguenec",
     id: 12,
   },
 ];

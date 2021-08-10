@@ -1,22 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import forParents from "./../../../Resources/data/forParentsData";
+import { forParentsCollection } from "../../../firebase";
+import { showErrorToast } from "./../../Utils/Toasts";
 
-const createSlides = () => {
-  return forParents.map((slide, index) => (
-    <Link to="/dla_rodzicow" className="for-parents-slide" key={index}>
-      <div className="for-parents-slide-wrapper">
-        <div className="for-parents-slide-text-wrapper">
-          <p className="for-parents-slide-text">{slide.title}</p>
-        </div>
-
-        <img src={slide.image} className="for-parents-slide-img" />
-      </div>
-    </Link>
-  ));
-};
 const ForParentsItem = () => {
+  const CreateSlides = () => {
+    const [info, setInfo] = useState([]);
+
+    useEffect(async () => {
+      try {
+        const snapshot = await forParentsCollection.get();
+        const info = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setInfo(info);
+      } catch (error) {
+        showErrorToast("Sorry try again later");
+      }
+    });
+
+    return info.map((slide, index) => (
+      <Link to="/dla_rodzicow" className="for-parents-slide" key={index}>
+        <div className="for-parents-slide-wrapper">
+          <div className="for-parents-slide-text-wrapper">
+            <p className="for-parents-slide-text">{slide.title}</p>
+          </div>
+
+          <img src={slide.image} className="for-parents-slide-img" />
+        </div>
+      </Link>
+    ));
+  };
   const settings = {
     dots: true,
     infinite: true,
@@ -85,7 +101,7 @@ const ForParentsItem = () => {
     ],
   };
 
-  return <Slider {...settings}>{createSlides()}</Slider>;
+  return <Slider {...settings}>{CreateSlides()}</Slider>;
 };
 
 export default ForParentsItem;

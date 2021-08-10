@@ -6,13 +6,13 @@ import "firebase/database";
 import { kindergartenDB } from "./temp/kindergarten-export";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBttZUQDkh7fF7OsTon1XCec6UnznT7j0g",
-  authDomain: "kindergarten-study.firebaseapp.com",
-  projectId: "kindergarten-study",
-  storageBucket: "kindergarten-study.appspot.com",
-  messagingSenderId: "1074721020838",
-  appId: "1:1074721020838:web:f30d566b40e46072ed4d67",
-  measurementId: "G-4RPY4TWTGQ",
+  apiKey: "AIzaSyBatbrxpi8c4FMfBs1C_2rUUFuXUaKuGJA",
+  authDomain: "kindergarten-v1.firebaseapp.com",
+  projectId: "kindergarten-v1",
+  storageBucket: "kindergarten-v1.appspot.com",
+  messagingSenderId: "924111648789",
+  appId: "1:924111648789:web:454dafd70729b76ea0761c",
+  measurementId: "G-D78L5PBCZH",
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -22,6 +22,7 @@ firebase.initializeApp(firebaseConfig);
 const DB = firebase.firestore();
 const newsCollection = DB.collection("news");
 const forParentsCollection = DB.collection("forParents");
+const responsesCollection = DB.collection("responses");
 
 // kindergartenDB.news.forEach((item) => {
 //   newsCollection.add(item);
@@ -29,5 +30,8 @@ const forParentsCollection = DB.collection("forParents");
 // kindergartenDB.forParents.forEach((item) => {
 //   forParentsCollection.add(item);
 // });
+// kindergartenDB.responses.forEach((item) => {
+//   responsesCollection.add(item);
+// });
 
-export { firebase, newsCollection, forParentsCollection };
+export { firebase, newsCollection, forParentsCollection, responsesCollection };

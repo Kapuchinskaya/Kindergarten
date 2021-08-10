@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import news from "../../../Resources/data/newsData";
+import news from "../../../Resources/data/carouselData";
 
 const Carousel = () => {
   const createSlides = () => {
@@ -15,7 +15,7 @@ const Carousel = () => {
         ></div>
         <div className="slide-description">
           <div className="slide-description-header"> {slide.title}</div>
-          <div className="slide-description-content"> {slide.title}</div>
+          <div className="slide-description-content"> {slide.subtitle}</div>
         </div>
       </div>
     ));

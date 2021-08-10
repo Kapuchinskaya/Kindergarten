@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import responsesData from "../../../Resources/data/responsesData";
-import quote from "../../../Resources/images/quote.png";
+import { showErrorToast } from "../../Utils/Toasts";
+import { responsesCollection } from "../../../firebase";
 
 const ResponsesCarousel = () => {
-  const createSlides = () => {
-    return responsesData.map((slide, index) => (
+  const CreateSlides = () => {
+    const [responses, setResponses] = useState([]);
+
+    useEffect(async () => {
+      try {
+        const snapshot = await responsesCollection.get();
+        const responses = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setResponses(responses);
+      } catch (error) {
+        showErrorToast("Sorry try again later");
+      }
+    }, []);
+
+    return responses.map((slide, index) => (
       <div key={index} className="response-item">
         <p className="response-item-content">{slide.content}</p>
         <p className="response-item-owner">{slide.owner}</p>
@@ -24,7 +39,7 @@ const ResponsesCarousel = () => {
     pauseOnHover: true,
   };
 
-  return <Slider {...settings}>{createSlides()}</Slider>;
+  return <Slider {...settings}>{CreateSlides()}</Slider>;
 };
 
 export default ResponsesCarousel;

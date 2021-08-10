@@ -147,6 +147,10 @@ footer {
 
 .slide-description {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: 80%;
   left: 50%;
   width: 400px;
@@ -161,7 +165,7 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 40px;
-  padding: 21px 70px 0px 70px;
+  /* padding: 21px auto 0px auto; */
   text-transform: uppercase;
 }
 
@@ -361,7 +365,7 @@ footer {
 
 .contacts-column p {
   color: #60605b;
-  margin-top: 5px;
+  margin: 5px 0px 0px 0px;
 }
 
 .map-responsive {

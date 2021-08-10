@@ -77,44 +77,49 @@ export const kindergartenDB = {
     {
       id: "1",
       title: "Dieta i żywienie",
-      content:
-        "Pellentesque tempor nisl dolor, ac placerat diam convallis ac. Cras imperdiet ex sit amet lacus pretium, non viverra arcu sollicitudin. In gravida facilisis risus, ac pellentesque lorem vehicula sed. Etiam vel semper lectus. Quisque ac erat sed neque convallis semper. Morbi nec arcu sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque vitae gravida felis. Vivamus vel risus in odio convallis fringilla et a massa. Pellentesque ullamcorper nulla ut lorem fermentum lacinia. Sed dignissim at enim non convallis.        Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean laoreet interdum quam, at tempor enim dapibus in. Sed tincidunt, metus eget luctus viverra, eros turpis porta erat, fringilla rhoncus nibh sapien at ante. Duis id nibh odio. Aenean lobortis pretium laoreet. Aliquam tempor venenatis augue at efficitur. Integer eu dictum lectus, vitae facilisis quam. Phasellus sagittis enim nec cursus pulvinar. Integer iaculis, lacus at luctus iaculis, enim sapien dictum sem, at consectetur orci erat eu justo. In posuere, nibh sit amet imperdiet consectetur, tellus lectus hendrerit dui, at ullamcorper sapien leo at ex. Phasellus at neque neque. In turpis felis, faucibus et ultricies sit amet, congue non ipsum. Morbi id arcu ut tortor sollicitudin lacinia vitae non tortor. Morbi non placerat augue, ut porta erat. Maecenas eleifend odio ac orci rutrum, quis gravida turpis ullamcorper. Maecenas sit amet pharetra lorem. Morbi nec nulla vitae felis vehicula dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eleifend urna vel dapibus aliquet. Proin et mauris neque. Praesent et dictum felis. Mauris mollis ex sed volutpat aliquet. Mauris vel suscipit lectus. Sed in neque nibh. Praesent finibus facilisis ullamcorper. Nulla facilisi.",
       image: "pic1.jpg",
     },
     {
       id: "2",
       title: "Dokumenty",
-      content:
-        "Risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque.",
       image: "pic2.jpg",
     },
     {
       id: "3",
       title: "Oferta zajęć",
-      content:
-        "Pellentesque tempor nisl dolor, ac placerat diam convallis ac. Cras imperdiet ex sit amet lacus pretium, non viverra arcu sollicitudin. In gravida facilisis risus, ac pellentesque lorem vehicula sed. Etiam vel semper lectus. Quisque ac erat sed neque convallis semper. Morbi nec arcu sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque vitae gravida felis. Vivamus vel risus in odio convallis fringilla et a massa. Pellentesque ullamcorper nulla ut lorem fermentum lacinia. Sed dignissim at enim non convallis.        Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean laoreet interdum quam, at tempor enim dapibus in. Sed tincidunt, metus eget luctus viverra, eros turpis porta erat, fringilla rhoncus nibh sapien at ante. Duis id nibh odio. Aenean lobortis pretium laoreet. Aliquam tempor venenatis augue at efficitur. Integer eu dictum lectus, vitae facilisis quam. Phasellus sagittis enim nec cursus pulvinar. Integer iaculis, lacus at luctus iaculis, enim sapien dictum sem, at consectetur orci erat eu justo. In posuere, nibh sit amet imperdiet consectetur, tellus lectus hendrerit dui, at ullamcorper sapien leo at ex. Phasellus at neque neque. In turpis felis, faucibus et ultricies sit amet, congue non ipsum. Morbi id arcu ut tortor sollicitudin lacinia vitae non tortor. Morbi non placerat augue, ut porta erat. Maecenas eleifend odio ac orci rutrum, quis gravida turpis ullamcorper. Maecenas sit amet pharetra lorem. Morbi nec nulla vitae felis vehicula dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eleifend urna vel dapibus aliquet. Proin et mauris neque. Praesent et dictum felis. Mauris mollis ex sed volutpat aliquet. Mauris vel suscipit lectus. Sed in neque nibh. Praesent finibus facilisis ullamcorper. Nulla facilisi.",
       image: "pic3.jpg",
     },
     {
       id: "4",
       title: "PŁATNOŚCI",
-      content:
-        "Risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque.",
       image: "pic4.jpg",
     },
     {
       id: "5",
       title: "Nasza Kadra",
-      content:
-        "Pellentesque tempor nisl dolor, ac placerat diam convallis ac. Cras imperdiet ex sit amet lacus pretium, non viverra arcu sollicitudin. In gravida facilisis risus, ac pellentesque lorem vehicula sed. Etiam vel semper lectus. Quisque ac erat sed neque convallis semper. Morbi nec arcu sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque vitae gravida felis. Vivamus vel risus in odio convallis fringilla et a massa. Pellentesque ullamcorper nulla ut lorem fermentum lacinia. Sed dignissim at enim non convallis.        Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean laoreet interdum quam, at tempor enim dapibus in. Sed tincidunt, metus eget luctus viverra, eros turpis porta erat, fringilla rhoncus nibh sapien at ante. Duis id nibh odio. Aenean lobortis pretium laoreet. Aliquam tempor venenatis augue at efficitur. Integer eu dictum lectus, vitae facilisis quam. Phasellus sagittis enim nec cursus pulvinar. Integer iaculis, lacus at luctus iaculis, enim sapien dictum sem, at consectetur orci erat eu justo. In posuere, nibh sit amet imperdiet consectetur, tellus lectus hendrerit dui, at ullamcorper sapien leo at ex. Phasellus at neque neque. In turpis felis, faucibus et ultricies sit amet, congue non ipsum. Morbi id arcu ut tortor sollicitudin lacinia vitae non tortor. Morbi non placerat augue, ut porta erat. Maecenas eleifend odio ac orci rutrum, quis gravida turpis ullamcorper. Maecenas sit amet pharetra lorem. Morbi nec nulla vitae felis vehicula dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eleifend urna vel dapibus aliquet. Proin et mauris neque. Praesent et dictum felis. Mauris mollis ex sed volutpat aliquet. Mauris vel suscipit lectus. Sed in neque nibh. Praesent finibus facilisis ullamcorper. Nulla facilisi.",
       image: "pic5.jpg",
     },
     {
       id: "6",
-      title: "TABLICA OGŁOSZEŃ",
-      content:
-        "Risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque.",
+      title: "OGŁOSZENia",
       image: "pic6.jpg",
+    },
+  ],
+  responses: [
+    {
+      content:
+        "Nam risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
+      owner: "Olga",
+    },
+    {
+      content:
+        "NeNam risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
+      owner: "Anton",
+    },
+    {
+      content:
+        "Risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
+      owner: "Kira",
     },
   ],
 };

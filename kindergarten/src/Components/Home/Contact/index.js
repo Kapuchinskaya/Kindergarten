@@ -11,7 +11,6 @@ const Contacts = () => {
           <h3>Organ Prowadzący:</h3>
           <p>Pellentesque eget urna magna. </p>
           <p>Proin accumsan volutpat elit sed dapibus. </p>
-          <p></p>
           <p>tel. 11 22 333 444 </p>
           <p>e-mail. kapuchinskaya.study@gmail.com </p>
         </div>
