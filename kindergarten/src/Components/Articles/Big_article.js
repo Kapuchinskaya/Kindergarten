@@ -7,6 +7,7 @@ import ScheduleIcon from "@material-ui/icons/Schedule";
 import ReusableButton from "../Utils/ReusableButton";
 import UnderConstruction from "../Utils/UnderConstruction";
 import UpButton from "../Utils/upButton";
+import news from "../../Resources/data/newsData";
 
 const useStyles = makeStyles(() => ({
   circProgress: {
@@ -18,6 +19,7 @@ const useStyles = makeStyles(() => ({
 
 const BigArticle = (props) => {
   const classes = useStyles();
+  /*FIREBASE VERSION
   const [loading, setLoading] = useState(true);
   const [news, setNews] = useState([]);
 
@@ -36,6 +38,7 @@ const BigArticle = (props) => {
 
     setLoading(false);
   }, []);
+*/
 
   const article = news.find(
     (newsItem) => newsItem.id === props.match?.params.id
@@ -49,29 +52,25 @@ const BigArticle = (props) => {
       />
     );
   return (
-    <>
-      {loading ? (
-        <CircularProgress className={classes.circProgress} />
-      ) : (
-        <div className="big-article-wrapper">
-          <img src={article.image} alt={article.title}></img>
-          <div className="big-article-body">
-            <div className="article-title">{article.title} </div>
-            <div className="article-time-wrapper">
-              <ScheduleIcon />
-              <div className="article-time">{article.time}</div>
-            </div>
-            <div className="article-content">{article.content} </div>
-          </div>
-          <ReusableButton
-            text="WSTECZ"
-            path="/actualnosci/newsPage"
-            arrow="left"
-          />
-          <UpButton />
+    // <>
+    //   {loading ? (
+    //     <CircularProgress className={classes.circProgress} />
+    //   ) : (
+    <div className="big-article-wrapper">
+      <img src={article.image} alt={article.title}></img>
+      <div className="big-article-body">
+        <div className="article-title">{article.title} </div>
+        <div className="article-time-wrapper">
+          <ScheduleIcon />
+          <div className="article-time">{article.time}</div>
         </div>
-      )}
-    </>
+        <div className="article-content">{article.content} </div>
+      </div>
+      <ReusableButton text="WSTECZ" path="/actualnosci/newsPage" arrow="left" />
+      <UpButton />
+    </div>
+    //   )}
+    // </>
   );
 };
 

@@ -241,7 +241,7 @@ footer {
   margin-top: 20px;
 }
 .big-article-wrapper img {
-  max-height: 400px;
+  height: 500px;
   border-radius: 5%;
 }
 .big-article-body {

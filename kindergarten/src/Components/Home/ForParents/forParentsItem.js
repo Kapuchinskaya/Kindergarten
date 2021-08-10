@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import { forParentsCollection } from "../../../firebase";
-import { showErrorToast } from "./../../Utils/Toasts";
+// import { forParentsCollection } from "../../../firebase";
+// import { showErrorToast } from "./../../Utils/Toasts";
+// import { firebase } from "../../../firebase";
+import info from "../../../Resources/data/forParentsData";
 
 const ForParentsItem = () => {
   const CreateSlides = () => {
+    /* FIREBASE VERSION
     const [info, setInfo] = useState([]);
 
+    //
     useEffect(async () => {
       try {
         const snapshot = await forParentsCollection.get();
@@ -15,11 +19,39 @@ const ForParentsItem = () => {
           id: doc.id,
           ...doc.data(),
         }));
+
+        // let promises = [];
+        // info.forEach((item, index) => {
+        //   promises.push(
+        //     new Promise((resolve, reject) => {
+        //       firebase
+        //         .storage()
+        //         .ref("forParents")
+        //         .child(item.image)
+        //         .getDownloadURL()
+        //         .then((url) => {
+        //           info[index].url = url;
+        //           resolve();
+        //         })
+        //         .catch((error) => {
+        //           reject();
+        //         });
+        //     })
+        //   );
+        // });
+
+        // Promise.all(promises).then(() => {
+        //   setInfo(info);
+        // });
+
         setInfo(info);
+
+        ////
       } catch (error) {
         showErrorToast("Sorry try again later");
       }
     });
+*/
 
     return info.map((slide, index) => (
       <Link to="/dla_rodzicow" className="for-parents-slide" key={index}>
@@ -27,7 +59,6 @@ const ForParentsItem = () => {
           <div className="for-parents-slide-text-wrapper">
             <p className="for-parents-slide-text">{slide.title}</p>
           </div>
-
           <img src={slide.image} className="for-parents-slide-img" />
         </div>
       </Link>

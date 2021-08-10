@@ -2,6 +2,7 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/app";
 import "firebase/database";
+import "firebase/storage";
 
 import { kindergartenDB } from "./temp/kindergarten-export";
 

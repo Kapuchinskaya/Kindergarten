@@ -5,7 +5,7 @@ import { CircularProgress } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import NewsPage from "./../Articles/index";
 import ArticleOverview from "./../Home/ArticlesOverview/index";
-
+import news from "../../Resources/data/newsData";
 const useStyles = makeStyles(() => ({
   circProgress: {
     margin: "50px auto",
@@ -16,6 +16,8 @@ const useStyles = makeStyles(() => ({
 
 const NewsHoc = (props) => {
   const classes = useStyles();
+
+  /*FIREBASE VERSION 
   const [loading, setLoading] = useState(true);
   const [news, setNews] = useState([]);
 
@@ -34,6 +36,7 @@ const NewsHoc = (props) => {
 
     setLoading(false);
   }, []);
+  */
 
   const article = news.find(
     (newsItem) => newsItem.id === props.match?.params.id
@@ -43,13 +46,13 @@ const NewsHoc = (props) => {
 
   if (!Component) return null;
   return (
-    <>
-      {loading ? (
-        <CircularProgress className={classes.circProgress} />
-      ) : (
-        <Component news={news} article={article} />
-      )}
-    </>
+    // <>
+    //   {loading ? (
+    //     <CircularProgress className={classes.circProgress} />
+    //   ) : (
+    <Component news={news} article={article} />
+    //   )}
+    // </>
   );
 };
 

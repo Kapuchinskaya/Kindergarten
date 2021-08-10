@@ -10,6 +10,7 @@ import Gallery from "./Components/Gallery/Gallery";
 import GalleryItem from "./Components/Gallery/GalleryItem";
 import NewsHoc from "./Components/Hoc/newsRequest";
 import UpButton from "./Components/Utils/upButton";
+import ContactsSection from './Components/Contacts/index';
 
 const Routes = () => {
   return (
@@ -18,6 +19,7 @@ const Routes = () => {
         <Header />
         <UpButton/>
         <Switch>
+          <Route path="/kontakty" component={ContactsSection} />
           <Route path="/galeria/:id" exact component={GalleryItem} />
           <Route path="/galeria" component={Gallery} />
           <Route path="/dla_rodzicow" component={ForParentsSection} />
