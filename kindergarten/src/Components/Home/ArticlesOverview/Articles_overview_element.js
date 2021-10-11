@@ -35,7 +35,7 @@ const ArticleOverviewElement = (props) => {
   return (
     <Card className={classes.root}>
       <div className={classes.rootWrapper}>
-        <div class="card-content-wrapper">
+        <div className="card-content-wrapper">
           <CardMedia
             className={classes.media}
             image={props.image}

@@ -35,7 +35,7 @@ const Header = () => {
   const classes = useStyles();
 
   return (
-    <AppBar class={classes.appBar} position="fixed">
+    <AppBar className={classes.appBar} position="fixed">
       <Link to={"/"}>
         <img src={logo} alt="logo" className="headerLogo" />
       </Link>
