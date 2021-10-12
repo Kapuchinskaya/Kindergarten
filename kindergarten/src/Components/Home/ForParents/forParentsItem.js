@@ -129,6 +129,28 @@ const ForParentsItem = () => {
           infinite: true,
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          className: "center",
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          arrows: false,
+          className: "center",
+          centerMode: true,
+          slidesToShow: 0.7,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
     ],
   };
 

@@ -65,7 +65,7 @@ h3 {
   text-align: center;
   /* margin-top: 50px; */
   background-size: 5px 5px !important;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-align: center;
   font-size: 60px;
   color: #d5ebfe;
@@ -85,6 +85,38 @@ h3 {
 ===============================*/
 .headerLogo {
   height: 50px;
+}
+
+.logo-wraper {
+  padding: 15px 0px;
+}
+
+@media only screen and (max-width: 480px) {
+  .headerLogo {
+    height: 30px;
+  }
+}
+.navbar-customization {
+  background-color: "#fafafa";
+  align-items: "center";
+  padding: "0 2%";
+}
+
+.link-customization {
+  color: #336666 !important;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0px 10px;
+}
+
+.link-customization:hover {
+  border-bottom: 2px solid #e67e22;
+  color: #e67e22;
+}
+.toggler-customization {
+  border: 2px solid #e67e22 !important;
 }
 
 /*=============================
@@ -141,6 +173,12 @@ footer {
   position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+  .carousel-wrapper {
+    height: 300px;
+  }
+}
+
 .carousel-image {
   background-size: cover !important;
 }
@@ -158,6 +196,12 @@ footer {
   transform: translate(-50%, -50%);
   border: 2px solid white;
   background-color: rgba(1, 1, 1, 0.64);
+}
+
+@media only screen and (max-width: 768px) {
+  .slide-description {
+    top: 50%;
+  }
 }
 
 .slide-description-header {
@@ -225,6 +269,12 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .article-element:last-child {
+    display: none;
+  }
 }
 
 .all-news-btn {
@@ -350,6 +400,13 @@ footer {
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .contacts-body {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
 .contacts-body {
   padding: 30px 50px;
   display: flex;
@@ -378,4 +435,16 @@ footer {
   height: 400px;
   width: 500px;
   /* position: absolute; */
+}
+
+@media only screen and (max-width: 620px) {
+  .map-responsive iframe {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .map-responsive iframe {
+    width: 220px;
+  }
 }

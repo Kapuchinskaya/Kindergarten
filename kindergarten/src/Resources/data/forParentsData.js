@@ -16,7 +16,7 @@ const forParents = [
   },
   {
     id: "2",
-    title: "NeLorem ipsum",
+    title: "dokumentacja",
     content:
       "NeNam risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
 
@@ -24,7 +24,7 @@ const forParents = [
   },
   {
     id: "3",
-    title: "ipsum NeLorem",
+    title: "ZAJĘCIA",
     content:
       "Risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
 
@@ -32,7 +32,7 @@ const forParents = [
   },
   {
     id: "4",
-    title: "Lorem ipsum",
+    title: "opłata",
     content:
       "Nam risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
 
@@ -40,7 +40,7 @@ const forParents = [
   },
   {
     id: "5",
-    title: "NeLorem ipsum",
+    title: "nasza kadra",
     content:
       "NeNam risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
 
@@ -48,7 +48,7 @@ const forParents = [
   },
   {
     id: "6",
-    title: "ipsum NeLorem",
+    title: "ogłoszenia",
     content:
       "Risus turpis, aliquet at pretium porta, hendrerit ut massa. Aliquam dapibus posuere ligula, sit amet egestas dolor. Donec sed sem purus. Aenean molestie sodales enim id pellentesque. ",
 

@@ -10,25 +10,25 @@ import c_9 from "../../Resources/images/gallery/9.jpg";
 const news = [
   {
     id: "1",
-    title: "XXX",
+    title: "Phasellus lac",
     content:
-      "NEW Phasellus lacinia lectus id nulla tristique, eu semper magna porttitor. Nullam vitae magna id elit scelerisque mollis. Suspendisse ultrices viverra bibendum. Sed vitae lacus sit amet metus congue dignissim in eget ligula. In luctus in dolor vitae consequat. Maecenas tempus nulla nec metus viverra, ut tempus justo ultricies. Sed auctor, justo quis luctus pulvinar, neque dui semper mi, vel laoreet lorem dui vitae nibh. Mauris sit amet enim id neque condimentum accumsan ut in purus. Pellentesque eu metus quis neque tincidunt viverra eget eget nunc. Vestibulum tincidunt pharetra ante facilisis vehicula. Quisque eu quam quis tellus sollicitudin tincidunt in id dui. Cras vel quam pellentesque, rhoncus est vitae, tempus lectus.",
+      "Duis lacus augue, pharetra ut dignissim vel, bibendum in ante. Phasellus vitae enim cursus eleifend.",
     time: "2021/07/01 11:50",
     image: c_1,
   },
   {
     id: "2",
-    title: "XXX",
+    title: "Maecenas vel",
     content:
-      "Phasellus lacinia lectus id nulla tristique, eu semper magna porttitor. Nullam vitae magna id elit scelerisque mollis. Suspendisse ultrices viverra bibendum. Sed vitae lacus sit amet metus congue dignissim in eget ligula. In luctus in dolor vitae consequat. Maecenas tempus nulla nec metus viverra, ut tempus justo ultricies. Sed auctor, justo quis luctus pulvinar, neque dui semper mi, vel laoreet lorem dui vitae nibh. Mauris sit amet enim id neque condimentum accumsan ut in purus. Pellentesque eu metus quis neque tincidunt viverra eget eget nunc. Vestibulum tincidunt pharetra ante facilisis vehicula. Quisque eu quam quis tellus sollicitudin tincidunt in id dui. Cras vel quam pellentesque, rhoncus est vitae, tempus lectus.",
+      "Donec ac nisl odio. Nulla bibendum libero est, at vestibulum ligula pharetra vel. Fusce eu lorem in.",
     time: "2021/07/01 11:50",
     image: c_2,
   },
   {
     id: "3",
-    title: "XXX",
+    title: "Justo tempor",
     content:
-      "Nunc tincidunt augue ut luctus sodales. Mauris in pellentesque ipsum, et condimentum lacus. Duis elit neque, imperdiet ut nisl sit amet, posuere tristique justo. Sed consectetur risus odio, at fringilla turpis faucibus nec. Nulla elementum, mi eget pretium dignissim, turpis turpis blandit justo, sit amet tempus turpis diam a tellus. Nulla eget justo tellus. Cras tristique, turpis eget condimentum ullamcorper, nibh nunc scelerisque tortor, ac finibus lorem enim ut orci. Proin fermentum quis erat et pellentesque. Vestibulum porta euismod elit eget pharetra. In diam nibh, facilisis non nulla quis, pretium feugiat felis. Aenean nec neque erat. Sed malesuada ex et diam porttitor, a iaculis felis convallis.",
+      "Sed ac leo nec justo tempor rutrum. Cras elementum tempus varius. Cras nisl nibh, condimentum ut mi.",
     time: "2021/06/22 15:50",
     image: c_3,
   },

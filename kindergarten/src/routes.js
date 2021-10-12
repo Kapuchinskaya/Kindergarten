@@ -17,7 +17,7 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <ScrollToTop>
-        <Header />
+        {/* <Header /> */}
         <HeaderBS />
         <UpButton />
         <Switch>

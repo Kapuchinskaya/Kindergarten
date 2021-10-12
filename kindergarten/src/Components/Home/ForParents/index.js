@@ -8,8 +8,8 @@ const ForParents = () => {
       <ForParentsItem />
       <div className="responses">
         <p className="quote">"</p>
-        <h3>RESPONSES</h3>
-        <ResponsesCarousel />
+        {/* <h3>RESPONSES</h3>
+        <ResponsesCarousel /> */}
       </div>
     </div>
   );

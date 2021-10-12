@@ -4,9 +4,8 @@ import ReusableButton from "../../Utils/ReusableButton";
 
 const ArticleOverview = (props) => {
   const getArticleElements = () => {
-    return props.news
-      .slice(0, 3)
-      .map((item, index) => (
+    return props.news.slice(0, 3).map((item, index) => (
+      <div className="article-element">
         <ArticleOverviewElement
           key={index}
           title={item.title}
@@ -15,7 +14,8 @@ const ArticleOverview = (props) => {
           image={item.image}
           id={item.id}
         ></ArticleOverviewElement>
-      ));
+      </div>
+    ));
   };
 
   return (

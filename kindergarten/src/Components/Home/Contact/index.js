@@ -14,7 +14,7 @@ const Contacts = () => {
           <p>tel. 11 22 333 444 </p>
           <p>e-mail. kapuchinskaya.study@gmail.com </p>
         </div>
-        <div className="contacts-column">
+        <div className="contacts-column map">
           <MapContainerWithoutApi />
         </div>
       </div>

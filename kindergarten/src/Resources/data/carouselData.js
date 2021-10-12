@@ -6,20 +6,20 @@ import c_3 from "../../Resources/images/carousel_images/c_3.jpg";
 const news = [
   {
     id: "1",
-    title: "Informacja 1",
+    title: "Turpis duis",
     subtitle: "Phasellus lacinia lectus id nulla tristique",
     image: c_1,
   },
   {
     id: "2",
-    title: "Informacja 2",
+    title: "Proin proin",
     subtitle: "Eu semper magna porttitor",
 
     image: c_2,
   },
   {
     id: "3",
-    title: "Informacja 3",
+    title: "Nam vivamus",
     subtitle: "Nunc tincidunt augue ut luctus sodales",
     image: c_3,
   },

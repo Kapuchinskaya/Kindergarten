@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import NewsPage from "./../Articles/index";
 import ArticleOverview from "./../Home/ArticlesOverview/index";
 import news from "../../Resources/data/newsData";
+
 const useStyles = makeStyles(() => ({
   circProgress: {
     margin: "50px auto",
